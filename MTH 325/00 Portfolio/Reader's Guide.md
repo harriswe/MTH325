@@ -7,11 +7,12 @@
 ## [[Week 3 Weighted Graphs, The Dijkstra-Jarník-Prim Algorithm and Kruskal’s Algorithm & Spanning Trees| 3. Minimum Weight Spanning Trees]]
 - Explained what the DJP algorithm and Kruskal's are - and how to apply them to the field of Computer Science.
 - 10-04-2024 12:21:49
-
-## 4. [[Week 4 Directed Graphs | Directed Graphs]]
-- 
-
+## [[ Week 4 Directed Graphs | 4. Directed Graphs]]
+* Explains what a directed graph is, and provides an existing example for easy reference. Loops are possible.
+- 11-02-2024
 ## 5. 2 Snack Attack
 
 ## [[Measures of Success | Rubric / Measures of Success]]
 - This portfolio attempts to conform to the pre-determined measures of success agreed upon in class. 
+
+`@TODO: Add proofs, contrapositive, contradiction, strong induction, weak induction. Need to add rest of sections. `
