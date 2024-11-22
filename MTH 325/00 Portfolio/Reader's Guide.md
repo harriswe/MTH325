@@ -15,4 +15,5 @@
 ## [[Measures of Success | Rubric / Measures of Success]]
 - This portfolio attempts to conform to the pre-determined measures of success agreed upon in class. 
 
-`@TODO: Add proofs, contrapositive, contradiction, strong induction, weak induction. Need to add rest of sections. `
+`@TODO: Add proofs, contrapositive, contradiction, strong induction, weak induction. Need to add rest of sections. Need a graph theory proof'
+
