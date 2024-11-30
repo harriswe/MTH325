@@ -11,9 +11,9 @@
 * Explains what a directed graph is, and provides an existing example for easy reference. Loops are possible.
 - 11-02-2024
 ## [[Week 5 - Snack Attack| 5. Snack Attack / Matrix Math]]
-
+* 11-20-2024 (complete)
+## [[Week 6 & 7 - Proofs and Relations | 6. Proofs and Relations]]
+* 11-29-2024*
 ## [[Measures of Success | Rubric / Measures of Success]]
 - This portfolio attempts to conform to the pre-determined measures of success agreed upon in class. 
-
-`@TODO: Add proofs, contrapositive, contradiction, strong induction, weak induction. Need to add rest of sections. Need a graph theory proof'
 
