@@ -5,16 +5,14 @@
 ![[Pasted image 20241122101216.png | ]]
 **Proof:**
 
-Break it down to several pieces....
-
-- **Case 1: b is even.** If b is even, then the statement "either b is even or ab is odd" is immediately true. We don't need to consider `ab` in this case.
+- **b is even.** If b is even, then the statement "either b is even or ab is odd" is true. 
     
-- **Case 2: b is odd.** Since a is odd (given in the theorem), and we're assuming b is odd in this case, let's express them in their general forms:
+- **b is odd.** Since a is odd, and we're assuming b is odd in this case, let's show them generally:
     
     - a = 2k + 1 (where k is any integer)
     - b = 2m + 1 (where m is any integer)
     
-    Now, let's calculate ab: ab = (2k + 1)(2m + 1) = 4km + 2k + 2m + 1 = 2(2km + k + m) + 1
+    Now, to calculate ab: ab = (2k + 1)(2m + 1) = 4km + 2k + 2m + 1 = 2(2km + k + m) + 1
     
     This shows that ab can be written in the form 2n + 1 (where n = 2km + k + m), which means ab is odd.
     
@@ -36,9 +34,9 @@ Now, we can directly calculate x²:
 
 x² = 5² = 25
 
-This confirms the conclusion of the contrapositive: if x = 5, then x² = 25.
+This confirms the contrapositive: if x = 5, then x² = 25.
 
-**Since we have proven the contrapositive true, the original statement is also true.**
+**The contrapositive is true, so the original statement is also true.**
 
 ## Contradiction
 
@@ -57,12 +55,13 @@ This confirms the conclusion of the contrapositive: if x = 5, then x² = 25.
     - **If m = 2:** Then k would have to be 150 (150 * 2 = 300), but this contradicts our assumption that k is less than 150.
         
     - **If m = 1:** Then k would have to be 300, which again contradicts our assumption that k is _less than_ 150.
-        
+    
+*May not be inclusive of all possible cases*
 3. **Contradiction:** We've explored all possible integer values for 'm', and in each case, we find a contradiction. This means our initial assumption that 300 has a factor between 100 and 150 must be false.
 
 ## Induction
 
-### Weak Induction
+### Weak Induction (Trees)
 
 ^12ff6c
 
@@ -72,7 +71,7 @@ This confirms the conclusion of the contrapositive: if x = 5, then x² = 25.
 
 - **Base Case:** For n = 1 (a single vertex), there are 0 edges. This satisfies the theorem (1 - 1 = 0).
     
-- **Inductive Hypothesis:** Assume the theorem holds true for a tree with `k` vertices (i.e., a tree with `k` vertices has `k-1`edges).
+- **Hypothesis:** Assume the theorem holds true for a tree with `k` vertices (i.e., a tree with `k` vertices has `k-1`edges).
     
 - **Inductive Step:** We need to show that the theorem also holds true for a tree with `k+1` vertices.
     
@@ -82,22 +81,21 @@ This confirms the conclusion of the contrapositive: if x = 5, then x² = 25.
     - Since we removed one edge to get `T'`, the original tree `T` must have had `k-1 + 1 = k` edges.
     - Therefore, the theorem holds for a tree with `k+1` vertices.
 - **Conclusion:** By the principle of weak induction, the theorem holds for all trees with `n` vertices.
-### Strong Induction
+### Strong Induction (Spanning Trees)
 
-**Conjecture:** Every connected graph with `n` vertices (where n ≥ 2) has a spanning tree. (A spanning tree is a subgraph that includes all the vertices of the original graph and is also a tree).
+**Conjecture:** Every connected graph with `n` vertices (where n ≥ 2) has a spanning tree.
 
-**Proof by Strong Induction:**
+**Strong Induction:**
 
 - **Base Case:** For n = 2 (two vertices connected by an edge), the graph itself is a spanning tree.
     
 - **Inductive Hypothesis:** Assume the theorem holds true for all connected graphs with `k` vertices, where `2 ≤ k ≤ m`.
     
-- **Inductive Step:** We need to show that the theorem also holds true for a connected graph with `m+1` vertices.
-    
-    - Consider a connected graph `G` with `m+1` vertices.
-    - Remove any edge `e` from `G`. This may result in one or two connected components.
-    - Each connected component has at most `m` vertices.
-    - By the inductive hypothesis, each connected component has a spanning tree.
-    - Add the edge `e` back to connect the spanning trees of the components. This forms a spanning tree for the original graph `G`.
-    - Therefore, the theorem holds for a connected graph with `m+1` vertices.
+- **Inductive Step:**
+
+1. Start with a connected graph `G` with `m+1` vertices.
+2. Remove any edge `e` from `G`. This might divide the graph into two connected components (or leave it as a single component).
+3. Each connected component has at most `m` vertices.
+4. By the inductive hypothesis, each connected component has a spanning tree.
+5. Reconnect the components using the removed edge `e`. This forms a spanning tree for the original graph `G`.
 - **Conclusion:** By the principle of strong induction, the theorem holds for all connected graphs with `n` vertices (where n ≥ 2).
