@@ -1,5 +1,6 @@
 
 - I will be using Exercises from Dr. Wells' textbook - [Data Structures Done Discretely.](https://faculty.gvsu.edu/wellsc/discrete/data_structures_done_discretely.html)
+- Using measure of success [[Measures of Success#^74fe05 | here]].
 ## Disjunctive Conclusion
 
 ![[Pasted image 20241122101216.png | ]]

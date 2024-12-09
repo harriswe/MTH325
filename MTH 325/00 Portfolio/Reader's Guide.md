@@ -11,13 +11,15 @@
 * Explains what a directed graph is, and provides an existing example for easy reference. Loops are possible.
 - 11-02-2024
 ## [[Week 5 - Snack Attack| 5. Snack Attack / Matrix Math]]
-* 11-20-2024 (complete)
+* Explains Matrix Multiplication, and forays into Adjacency Matrices.
+* 11-20-2024
 ## [[Week 6 & 7 - Proofs and Relations | 6. Proofs and Relations]]
+* Sample proofs of examples from the textbook.
 * 11-29-2024
 ## [[Week 8 - The Floyd-Roy-Warshall Algorithm | 8. Floyd-Roy-Warshall Algorithm ]]
 - 12-01-2024
-## 9. Trees and Tree Traversal
-
+## [[Week 9 - Trees and Tree Traversal | 9. Trees and Traversal of Trees]]
+* 12-02-2024
 
 
 

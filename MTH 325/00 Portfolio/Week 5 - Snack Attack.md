@@ -4,7 +4,7 @@
 
 Matrix multiplication is an operation that takes two matrices and produces another matrix. In order for matrix multiplication to be defined, **the number of columns in the first matrix must be equal to the number of rows in the second matrix.** The resulting matrix will have the same number of rows as the first matrix and the same number of columns as the second matrix.
 
-The entry in the i row and j column of the product matrix is found by taking the product of the i row of the first matrix and the j column of the second matrix. For example, consider the following matrices:
+The entry in the i row and j column of the product matrix is found by taking the product of the i row of the first matrix and the j column of the second matrix:
 
 ```
 A = [[1, 2],
@@ -24,34 +24,13 @@ AB = [[1*5+2*7, 1*6+2*8],
      [43, 50]]
 ```
 
-## **Adjacency Matrices**
+## What’s an Adjacency Matrix?
 
-An adjacency matrix is a square matrix that represents a finite graph. The rows and columns of the adjacency matrix are indexed by the vertices of the graph. The entry in the ith row and jth column is 1 if there is an edge from vertex i to vertex j, and 0 otherwise.
+An adjacency matrix is just a way to represent a graph using a grid of numbers. If you’ve got a graph, each row and column of the matrix represents one of its vertices. The entries in the matrix tell you whether there’s an edge (a connection) between two vertices:
 
-For example, consider the following graph:
+- **1** = There’s an edge.
+- **0** = No edge.
 
-[asy] unitsize(1 cm);
+### My Take:
 
-pair A, B, C;
-
-A = (0,1); B = (1,1); C = (1,0);
-
-draw(A--B--C--cycle);
-
-label("A", A, N); label("B", B, NE); label("C", C, SE); [/asy]
-
-The adjacency matrix for this graph is
-
-```
-[[0, 1, 1],
- [1, 0, 1],
- [1, 1, 0]]
-```
-
-**Applications of Matrix Multiplication and Adjacency Matrices**
-
-Matrix multiplication and adjacency matrices have a number of applications in graph theory and other areas of mathematics. For example, the powers of an adjacency matrix can be used to count the number of paths of a given length between two vertices in a graph.
-
-**Conclusion**
-
-In this portfolio entry, I have demonstrated my understanding of matrix multiplication and adjacency matrices. I have also discussed some of the applications of these concepts.
+It’s like a friendship chart for vertices. If two vertices are "friends" (connected by an edge), the matrix marks it with a 1. Otherwise, it’s a 0.
