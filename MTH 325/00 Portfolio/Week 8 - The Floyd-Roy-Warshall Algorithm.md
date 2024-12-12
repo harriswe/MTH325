@@ -28,7 +28,7 @@ def floyd_warshall(graph):
       elif graph[i][j] != float('inf'): 
         dist[i][j] = graph[i][j]
         
-# checks if going from vertex `i` to `j` through vertex `k` results in a shorter path than the current shortest path between `i` and `j`. If it does, the distance in `dist` is updated.
+# checks if going from vertex `i` to `j` through vertex `k` results in a shorter path than the current shortest path between `i` and `j`. If it does, the distance in `dist` is updated. #
 
   for k in range(n):
     for i in range(n):
