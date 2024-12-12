@@ -9,4 +9,36 @@ This algorithm uses a table (a matrix) to store and update the shortest distance
 3. **Completion:** After iterating through all the possibilities, we're left with the correct matrix.
     
 
-I had great difficulty figuring out how to digitalize matrices, especially sequentially. I'd have included a more comprehensive example if not due to this. 
+This video really helped explain how to grasp the programming part of this. https://www.youtube.com/watch?v=4OQeCuLYj-4
+
+I was able to easily convert between swift (example) and python here.
+
+Here's my algorithm:
+
+```
+def floyd_warshall(graph):
+  n = len(graph) # Number of Vertices
+  
+# Distance between vertices
+  dist = [[float('inf') for _ in range(n)] for _ in range(n)]  
+  
+  for i in range(n):
+    for j in range(n):
+      if i == j: 
+        dist[i][j] = 0
+      elif graph[i][j] != float('inf'): 
+        dist[i][j] = graph[i][j]
+        
+# checks if going from vertex `i` to `j` through vertex `k` results in a shorter path than the current shortest path between `i` and `j`. If it does, the distance in `dist` is updated.
+
+  for k in range(n):
+    for i in range(n):
+      for j in range(n):
+        dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j])
+        
+  return dist
+```
+
+
+
+
