@@ -16,6 +16,8 @@
 ## [[Week 6 & 7 - Proofs and Relations | 6. Proofs and Relations]]
 * Sample proofs of examples from the textbook.
 * 11-29-2024
+## [[Week 7 Kruskal's Algorithm| 7. Kruskal's Algorithm]]
+* 12-11-2024
 ## [[Week 8 - The Floyd-Roy-Warshall Algorithm | 8. Floyd-Roy-Warshall Algorithm ]]
 - 12-01-2024
 ## [[Week 9 - Trees and Tree Traversal | 9. Trees and Traversal of Trees]]

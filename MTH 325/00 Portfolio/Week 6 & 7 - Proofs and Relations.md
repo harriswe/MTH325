@@ -89,9 +89,9 @@ This confirms the contrapositive: if x = 5, then x² = 25.
 **Strong Induction:**
 
 - **Base Case:** For n = 2 (two vertices connected by an edge), the graph itself is a spanning tree.
-    
+
 - **Inductive Hypothesis:** Assume the theorem holds true for all connected graphs with `k` vertices, where `2 ≤ k ≤ m`.
-    
+
 - **Inductive Step:**
 
 1. Start with a connected graph `G` with `m+1` vertices.
@@ -100,3 +100,20 @@ This confirms the contrapositive: if x = 5, then x² = 25.
 4. By the inductive hypothesis, each connected component has a spanning tree.
 5. Reconnect the components using the removed edge `e`. This forms a spanning tree for the original graph `G`.
 - **Conclusion:** By the principle of strong induction, the theorem holds for all connected graphs with `n` vertices (where n ≥ 2).
+
+## Proof by Contrapositive (Trees)
+
+**We Will Use Proof by Contrapositive:**
+
+**Statement:** If T is a tree, then T has at least one leaf.
+
+**Contrapositive:** If T has no leaves, then T is not a tree.
+
+**Assumption:** Let's assume T is a graph with 2 or more vertices and _no_ leaves.
+
+**Implication:** If T has no leaves, every vertex in T has a degree of at least 2.
+
+**Construct a walk:** Similar to the proof by contradiction, we can start at a vertex and keep traversing edges since every vertex has a degree of at least 2. This will eventually lead to revisiting a vertex, forming a cycle.
+
+**Conclusion:** Since T contains a cycle, it cannot be a tree (as trees are acyclic). This directly proves the contrapositive statement: If T has no leaves, then T is not a tree.
+

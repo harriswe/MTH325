@@ -35,7 +35,7 @@ if __name__ == "__main__":
 ```
 ### What Happens Here?
 
-1. The tree is walked through in a very organized fashion: **left subtree -> root -> right subtree**.
+The tree is walked through in a very organized fashion: **left subtree -> root -> right subtree**
 
 ## Prüfer Sequences: The IKEA of Trees
 
@@ -45,7 +45,10 @@ At first, Prüfer sequences seemed like a random, abstract concept... but they�
 
 Think of it like disassembling a tree:
 
-1. Peel off the smallest leaf and write down its buddy (the connected node).
-2. Keep going until there’s nothing left but the core.
+Peel off the smallest leaf and write down its buddy (the connected node).
+Keep going until there’s nothing left but the core.
 
 It’s amazing how this little sequence can hold all the info you need to rebuild the tree. It makes me think about how much data we trash when we simplify problems using code as well.
+
+
+## Proof by 
